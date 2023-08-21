@@ -213,7 +213,7 @@ class DIWE_MasonryGridItem extends ET_Builder_Module {
 
 
 		if($this->props['heading']!==""|$this->props['content']!==""){
-			$markup .= '<div class="description" style="background-color:'.$background.';color:'.$color.';"><div class="inner">'.$url_behavior.'<h4>'.esc_html($this->props['heading']).'</h4>'.$this->props['content'].'</div></div>' ;
+			$markup .= '<div class="description" style="background-color:'.$background.';color:'.$color.';"><div class="inner"><h4>'.esc_html($this->props['heading']).'</h4>'.$this->props['content'].'</div></div>' ;
 		}
 		$markup .= $hasOverlay ? '</a>':'';
 		return $markup;
