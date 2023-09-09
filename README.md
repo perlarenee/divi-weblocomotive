@@ -10,6 +10,7 @@ This is a plugin with custom modules for the Elegant Themes Visual Builder, Divi
 * Flexible responsive masonry grid with grid items being added as seperate items within the module
 * Optional overlay with adjustable background and text colors, title, description, and link/link behavior
 * Option to either automatically sort grid as regular 1x1 grid or behave as a masonry grid
+* Control of the grid column count on desktop/tablet and mobile device sizes
 * Options to specify Desktop, Tablet and Mobile device sizes for each grid item
 * Control of grid image background position left/right top/bottom
 
@@ -22,6 +23,7 @@ This is a plugin with custom modules for the Elegant Themes Visual Builder, Divi
 * Option to show/hide label
 * Option to hide the navigation until a scrolling action
 * Option to hide the navigation when at the top of the page
+* Option to show a logo or other image with or without a link above or below the dot navigation
 * Some initial styling
 
 _Best of luck. I hope this helps._
