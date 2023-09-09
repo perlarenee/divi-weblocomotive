@@ -93,9 +93,45 @@
 .diwe-masonry .grid-wrapper {
 	display: grid;
 	grid-gap: 10px;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-template-columns: repeat(5,1fr);
 	grid-auto-rows: 200px;
 	grid-auto-flow: dense;
+}
+.diwe-masonry .grid-wrapper.grid1 {
+	grid-template-columns: repeat(1,1fr);
+}
+.diwe-masonry .grid-wrapper.grid2 {
+	grid-template-columns: repeat(2,1fr);
+}
+.diwe-masonry .grid-wrapper.grid3 {
+	grid-template-columns: repeat(3,1fr);
+}
+.diwe-masonry .grid-wrapper.grid4 {
+	grid-template-columns: repeat(4,1fr);
+}
+.diwe-masonry .grid-wrapper.grid5 {
+	grid-template-columns: repeat(5,1fr);
+}
+.diwe-masonry .grid-wrapper.grid6 {
+	grid-template-columns: repeat(6,1fr);
+}
+.diwe-masonry .grid-wrapper.grid7 {
+	grid-template-columns: repeat(7,1fr);
+}
+.diwe-masonry .grid-wrapper.grid8 {
+	grid-template-columns: repeat(8,1fr);
+}
+.diwe-masonry .grid-wrapper.grid9 {
+	grid-template-columns: repeat(9,1fr);
+}
+.diwe-masonry .grid-wrapper.grid10 {
+	grid-template-columns: repeat(10,1fr);
+}
+.diwe-masonry .grid-wrapper.grid11 {
+	grid-template-columns: repeat(11,1fr);
+}
+.diwe-masonry .grid-wrapper.grid12 {
+	grid-template-columns: repeat(12,1fr);
 }
 .diwe-masonry .grid-wrapper .xy1 {
 	grid-column: span 1;
@@ -135,8 +171,47 @@ input#et-fb-wrapper {
 		grid-column: span 2;
 		grid-row: span 2;
 	}
+	.diwe-masonry .grid-wrapper {
+		grid-template-columns: repeat(4,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridtab1 {
+		grid-template-columns: repeat(1,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridtab2 {
+		grid-template-columns: repeat(2,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridtab3 {
+		grid-template-columns: repeat(3,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridtab4 {
+		grid-template-columns: repeat(4,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridtab5 {
+		grid-template-columns: repeat(5,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridtab6 {
+		grid-template-columns: repeat(6,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridtab7 {
+		grid-template-columns: repeat(7,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridtab8 {
+		grid-template-columns: repeat(8,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridtab9 {
+		grid-template-columns: repeat(9,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridtab10 {
+		grid-template-columns: repeat(10,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridtab11 {
+		grid-template-columns: repeat(11,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridtab12 {
+		grid-template-columns: repeat(12,1fr);
+	}
 }
-@media only screen and (max-width: 480) {
+@media only screen and (max-width: 480px) {
 	.diwe-masonry .grid-wrapper .mobile-xy1 {
 		grid-column: span 1;
 		grid-row: span 1;
@@ -153,4 +228,44 @@ input#et-fb-wrapper {
 		grid-column: span 2;
 		grid-row: span 2;
 	}
+	.diwe-masonry .grid-wrapper {
+		grid-template-columns: repeat(1,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridmob1 {
+		grid-template-columns: repeat(1,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridmob2 {
+		grid-template-columns: repeat(2,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridmob3 {
+		grid-template-columns: repeat(3,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridmob4 {
+		grid-template-columns: repeat(4,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridmob5 {
+		grid-template-columns: repeat(5,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridmob6 {
+		grid-template-columns: repeat(6,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridmob7 {
+		grid-template-columns: repeat(7,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridmob8 {
+		grid-template-columns: repeat(8,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridmob9 {
+		grid-template-columns: repeat(9,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridmob10 {
+		grid-template-columns: repeat(10,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridmob11 {
+		grid-template-columns: repeat(11,1fr);
+	}
+	.diwe-masonry .grid-wrapper.gridmob12 {
+		grid-template-columns: repeat(12,1fr);
+	}
+	
 }

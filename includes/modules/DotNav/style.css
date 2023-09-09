@@ -163,3 +163,13 @@ html {
 .wl-dotnav a.active .dot > .inner{
     background: transparent;
 }
+.wl-dotnav .dotnav_logo {
+    display: block;
+    max-width: 60px;
+    padding: 5px;
+    transition: opacity 1s;
+    opacity: 1;
+}
+.wl-dotnav .dotnav_logo:hover {
+    opacity: 0.5;
+}

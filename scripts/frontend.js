@@ -78,7 +78,7 @@ jQuery(function($) {
 
         $('.dotnav').each(function(){
             var instance = $(this);
-            var links = instance.find('a');
+            var links = instance.find('.et_pb_diwe_dotnav_item a');
             links.each(function(){
                 var href = $(this).attr('href');
                 var y = $(window).scrollTop();

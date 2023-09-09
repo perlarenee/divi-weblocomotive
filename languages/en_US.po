@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Divi Weblocomotive 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/divi-"
 "weblocomotive\n"
-"POT-Creation-Date: 2023-08-21 09:19:40+00:00\n"
+"POT-Creation-Date: 2023-08-21 19:30:21+00:00\n"
 "PO-Revision-Date: 2023-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,6 +63,78 @@ msgstr ""
 msgid "Hide at top"
 msgstr ""
 
+#: includes/modules/DotNav/DotNav.php:62
+msgid "Display Logo"
+msgstr ""
+
+#: includes/modules/DotNav/DotNav.php:65
+msgid "On"
+msgstr ""
+
+#: includes/modules/DotNav/DotNav.php:66
+msgid "Off"
+msgstr ""
+
+#: includes/modules/DotNav/DotNav.php:77
+msgid "Logo Position"
+msgstr ""
+
+#: includes/modules/DotNav/DotNav.php:80
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:149
+msgid "Top"
+msgstr ""
+
+#: includes/modules/DotNav/DotNav.php:81
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:150
+msgid "Bottom"
+msgstr ""
+
+#: includes/modules/DotNav/DotNav.php:88 includes/modules/DotNav/DotNav.php:91
+#: includes/modules/DotNavItem/DotNavItem.php:47
+#: includes/modules/DotNavItem/DotNavItem.php:50
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:63
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:66
+msgid "Link"
+msgstr ""
+
+#: includes/modules/DotNav/DotNav.php:98
+#: includes/modules/DotNavItem/DotNavItem.php:55
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:72
+msgid "Link Behavior"
+msgstr ""
+
+#: includes/modules/DotNav/DotNav.php:101
+#: includes/modules/DotNavItem/DotNavItem.php:58
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:75
+msgid "New Window"
+msgstr ""
+
+#: includes/modules/DotNav/DotNav.php:102
+#: includes/modules/DotNavItem/DotNavItem.php:59
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:76
+msgid "Same window"
+msgstr ""
+
+#: includes/modules/DotNav/DotNav.php:108
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:54
+msgid "Image"
+msgstr ""
+
+#: includes/modules/DotNav/DotNav.php:110
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:56
+msgid "Upload an image"
+msgstr ""
+
+#: includes/modules/DotNav/DotNav.php:111
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:57
+msgid "Choose an Image"
+msgstr ""
+
+#: includes/modules/DotNav/DotNav.php:112
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:58
+msgid "Set As Image"
+msgstr ""
+
 #: includes/modules/DotNavItem/DotNavItem.php:23
 msgid "Dot Navigation Item"
 msgstr ""
@@ -77,28 +149,6 @@ msgstr ""
 
 #: includes/modules/DotNavItem/DotNavItem.php:43
 msgid "Input your desired menu item label"
-msgstr ""
-
-#: includes/modules/DotNavItem/DotNavItem.php:47
-#: includes/modules/DotNavItem/DotNavItem.php:50
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:63
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:66
-msgid "Link"
-msgstr ""
-
-#: includes/modules/DotNavItem/DotNavItem.php:55
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:72
-msgid "Link Behavior"
-msgstr ""
-
-#: includes/modules/DotNavItem/DotNavItem.php:58
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:75
-msgid "New Window"
-msgstr ""
-
-#: includes/modules/DotNavItem/DotNavItem.php:59
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:76
-msgid "Same window"
 msgstr ""
 
 #: includes/modules/MasonryGrid/MasonryGrid.php:18
@@ -142,22 +192,6 @@ msgstr ""
 
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:50
 msgid "Content entered here will appear as the image description"
-msgstr ""
-
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:54
-msgid "Image"
-msgstr ""
-
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:56
-msgid "Upload an image"
-msgstr ""
-
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:57
-msgid "Choose an Image"
-msgstr ""
-
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:58
-msgid "Set As Image"
 msgstr ""
 
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:81
@@ -219,14 +253,6 @@ msgstr ""
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:146
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:157
 msgid "Background Position"
-msgstr ""
-
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:149
-msgid "Top"
-msgstr ""
-
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:150
-msgid "Bottom"
 msgstr ""
 
 #. Plugin Name of the plugin/theme

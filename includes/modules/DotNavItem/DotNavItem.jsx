@@ -17,7 +17,7 @@ class DotNavItem extends Component {
   };
 
   render() {
-    console.log(this);
+   // console.log(this);
     return (
       <Fragment>
           {this._renderContent()}

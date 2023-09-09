@@ -42,7 +42,7 @@ class MasonryGrid extends Component {
     return (
       <Fragment>
         <h1 className="masonry-grid-heading">{this.props.heading}</h1>
-        <div className="diwe-masonry"><div className="grid-wrapper">{this.props.content}</div></div>
+        <div className="diwe-masonry"><div className={"grid-wrapper "+this.props.size+" "+this.props.size_tablet+" "+this.props.size_mobile}>{this.props.content}</div></div>
       </Fragment>
     );
   }
