@@ -37,3 +37,13 @@ function diwe_initialize_extension() {
 }
 add_action( 'divi_extensions_init', 'diwe_initialize_extension' );
 endif;
+
+/**
+ * Enqueue script with jQuery as a dependency.
+ */
+function wpdocs_scripts_method() {
+	$plugin_dir = WP_PLUGIN_DIR . '/divi-weblocomotive';
+	wp_enqueue_script( 'fontawesome', $plugin_dir . '/scripts/fontawesome.js', array( 'jquery' ) );
+
+}
+add_action( 'wp_enqueue_scripts', 'wpdocs_scripts_method' );
