@@ -57,8 +57,9 @@ html {
     padding: .1em;
     border-radius: 50%;
     border: 1px solid #000;
-    background: transparent;
+    background: #fff;
     display: inline-block;
+    box-shadow: 0px 0px 1px 1px #FFF;
 }
 .wl-dotnav .dot > .inner {
     width: 20px;
