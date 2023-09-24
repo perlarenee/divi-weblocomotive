@@ -156,4 +156,52 @@ jQuery(function($) {
         }
     });
 
+    let pageIndex = {};
+
+    //increment blog instance
+    if($(".loadmorePosts")){
+        let loadMores = document.querySelectorAll('.loadmorePosts');
+        let blogs = document.querySelectorAll('.diwe-blog');
+        for(let i=0;i<loadMores.length;i++){
+            let thisInstance = loadMores[i];
+            let thisBlog = blogs[i];
+            thisInstance.dataset.instance = i;
+            thisBlog.dataset.instance=i;
+            pageIndex[i] = 1;
+        }
+    }
+    //ajax load more
+    $('.loadmorePosts').on('click',function(){
+        let thisItem = parseInt($(this).data('instance'));
+        pageIndex[thisItem] = pageIndex[thisItem]+1;
+        let currentPage = pageIndex[thisItem];
+        let postData = $('.diwe-blog[data-instance="'+thisItem+'"').data("post");
+
+
+        //console.log('postData',postData.dark);
+        $.ajax({
+            type: 'POST',
+            url: '/wp-admin/admin-ajax.php',
+            dataType: 'json',
+            data: {
+              action: 'weichie_load_more',
+              paged: currentPage,
+              code: postData.code,
+              dark: postData.dark,
+              order: postData.order,
+              orderby: postData.orderby,
+              post_type: postData.post_type,
+              posts_per_page: postData.posts_per_page
+            },
+            success: function (res) {
+                if(currentPage >= res.max){
+                    $('.loadmorePosts[data-instance="'+thisItem+'"').hide();
+                }
+                $('.diwe-blog[data-instance="'+thisItem+'"').append(res.html);
+                
+            }
+          });
+
+    });
+
 });

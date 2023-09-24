@@ -14,10 +14,17 @@ class Blog extends Component {
   }
 
   componentDidMount() {
-    let postType = this.props.post_type;
-    let path = "/wp-json/wp/v2/posts?post_type="+postType+'&_embed';
+    let postType = this.props.post_type ? this.props.post_type : "post";
+    let limit = this.props.post_limit ? this.props.post_limit : "2";
+    let order = this.props.order === "on" ? "asc" : "desc";
+    let orderby = this.props.orderby ? this.props.orderby : "date";
+    let query = "post_type="+postType+"&_embed&per_page="+limit+"&order="+order+"&orderby="+orderby;
+    console.log('order',order,'orderby',orderby);
+
+    let path = "/wp-json/wp/v2/posts?"+query;
+    //if local dev environment
     if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1" || window.location.hostname === ""){
-      path = '?rest_route=/wp/v2/posts&post_type='+postType+'&_embed';
+      path = "?rest_route=/wp/v2/posts&"+query;
     }
 
     fetch(path)//'http://weblocomotive.com/wp-json/wp/v2/posts?post_type=post')
