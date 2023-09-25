@@ -26,4 +26,17 @@ This is a plugin with custom modules for the Elegant Themes Visual Builder, Divi
 * Option to show a logo or other image with or without a link above or below the dot navigation
 * Some initial styling
 
+### Infinite Loading Blog
+#### Features
+* Control of:
+** Post Type
+** Pseudo code styling
+** Dark and light theme
+** Amount of posts per 'page'
+** Ascending or Descending Order of posts
+** What posts sort by, date, title, modified, etc.
+* Infinite load of posts without affecting the website footer. Load more button disappears after last post is loaded.
+* Imitation subtitle using first cateogy name as subtitle. 
+
+
 _Best of luck. I hope this helps._
