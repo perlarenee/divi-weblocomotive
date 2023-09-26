@@ -49,7 +49,7 @@ function wpdocs_scripts_method() {
 }
 //add_action( 'wp_enqueue_scripts', 'wpdocs_scripts_method' );
 
-function weichie_load_more() {
+function diwe_load_more() {
 //inspired by https://weichie.com/blog/load-more-posts-ajax-wordpress/
 
 		$dark = $_POST['dark'] ? $_POST['dark'] : "";//$this->props['dark']=="on"? "dark" : "";
@@ -115,7 +115,7 @@ function weichie_load_more() {
 				$readmore = '<p class="readmore"><a href="'.get_the_permalink($post).'">'.($code ? '<span class="code">&lt;a&gt;</span>':'').'Read More...'.($code ? '<span class="code">&lt;/a&gt;</span>':'').'</a></p>';
 	
 				$blog .= sprintf( 
-					'<div class="blog-card %1$s code"><div class="meta">%2$s<ul class="details">%3$s%4$s</ul></div><div class="description">%5$s%6$s%7$s%8$s</div></div>',
+					'<div class="blog-card %1$s code hidden"><div class="meta">%2$s<ul class="details">%3$s%4$s</ul></div><div class="description">%5$s%6$s%7$s%8$s</div></div>',
 					$dark,
 					$image,
 					$author,
@@ -141,5 +141,5 @@ function weichie_load_more() {
 		exit;
 
   }
-  add_action('wp_ajax_weichie_load_more', 'weichie_load_more');
-  add_action('wp_ajax_nopriv_weichie_load_more', 'weichie_load_more');
+  add_action('wp_ajax_diwe_load_more', 'diwe_load_more');
+  add_action('wp_ajax_nopriv_diwe_load_more', 'diwe_load_more');

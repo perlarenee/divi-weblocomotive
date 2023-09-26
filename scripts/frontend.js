@@ -26,7 +26,7 @@ jQuery(function($) {
     var method = false;
     var clickDelay = false;
 
-    var showHideDotNav = function(option="show",instance=false){
+   function showHideDotNav(option="show",instance=false){
         var dotNav = instance;
         //console.log('option:',option,'instance:',instance)
         if(option == "show"){
@@ -38,7 +38,7 @@ jQuery(function($) {
         }
     }
 
-    var getTopPad = function(){
+    function getTopPad(){
         var staticHeader = $('.et-fixed-header');
         var adminBar = $("#wpadminbar");
         var topPad = 0;
@@ -53,7 +53,7 @@ jQuery(function($) {
     }
 
     //set current dotnav as active and add to local storage for history state
-    var dotnavActive = function(thisID=false){
+    function dotnavActive(thisID=false){
         //console.log('dotnav active:',thisID);
         $(".dotnav a").removeClass("active");
         var thisElem = $(".dotnav a[href$='"+thisID+"']");
@@ -170,12 +170,46 @@ jQuery(function($) {
             pageIndex[i] = 1;
         }
     }
+
+
     //ajax load more
+    function showPosts(thisItem){
+        let posts = $('.diwe-blog[data-instance="'+thisItem+'"] .blog-card.hidden');
+
+        let topPadding = 15;//extra margin
+        if($("#main-header")){
+            if($("#main-header:visible").length !== 0){
+                let headerHeight = $("#main-header").outerHeight();
+                topPadding += headerHeight;
+            }
+        }
+        if($("#wpadminbar")){
+            if($("#wpadminbar:visible").length !== 0){
+                let adminBarHeight = $("#wpadminbar").outerHeight();
+                topPadding += adminBarHeight;
+            }
+        }
+        let time =  0;
+        posts.each(function(i){
+
+            setTimeout(() => {
+                let blogCard = $(this);
+                blogCard.removeClass('hidden');
+                let scrollTo = Math.ceil(blogCard.offset().top-topPadding);
+                let body = $("html, body");
+                body.stop().animate({scrollTop:scrollTo}, 1000, 'swing', function() {});
+
+              },time)
+              time += 500;
+
+        });
+    }
+
     $('.loadmorePosts').on('click',function(){
         let thisItem = parseInt($(this).data('instance'));
         pageIndex[thisItem] = pageIndex[thisItem]+1;
         let currentPage = pageIndex[thisItem];
-        let postData = $('.diwe-blog[data-instance="'+thisItem+'"').data("post");
+        let postData = $('.diwe-blog[data-instance="'+thisItem+'"]').data("post");
         let ajaxPath = postData.path ? postData.path+'/wp-admin/admin-ajax.php' : "";
 
         $.ajax({
@@ -183,7 +217,7 @@ jQuery(function($) {
             url: ajaxPath,
             dataType: 'json',
             data: {
-              action: 'weichie_load_more',
+              action: 'diwe_load_more',
               paged: currentPage,
               code: postData.code,
               dark: postData.dark,
@@ -194,10 +228,10 @@ jQuery(function($) {
             },
             success: function (res) {
                 if(currentPage >= res.max){
-                    $('.loadmorePosts[data-instance="'+thisItem+'"').hide();
+                    $('.loadmorePosts[data-instance="'+thisItem+'"]').hide();
                 }
-                $('.diwe-blog[data-instance="'+thisItem+'"').append(res.html);
-                
+                $('.diwe-blog[data-instance="'+thisItem+'"]').append(res.html);
+                showPosts(thisItem);
             }
           });
 
