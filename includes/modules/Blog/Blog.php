@@ -6,7 +6,6 @@ class DIWE_Blog extends ET_Builder_Module {
 	//public $child_slug = 'et_pb_diwe_masonry_grid_item';
 	public $vb_support = 'on';
 	
-
 	protected $module_credits = array(
 		'module_uri' => 'weblocomotive.com',
 		'author'     => 'WebLocomotive',
@@ -136,6 +135,9 @@ class DIWE_Blog extends ET_Builder_Module {
 		if($query->have_posts()){
 
 			$posts = $query->posts;
+			$fullUrl = get_site_url();
+			$path = preg_replace("(^https?:)", "", $fullUrl);
+
 
 			$postData = json_encode([
 				'post_type' => $post_type,
@@ -143,7 +145,8 @@ class DIWE_Blog extends ET_Builder_Module {
 				'orderby' => $orderby,
 				'order' => $order,
 				'dark' => $dark,
-				'code' => $code
+				'code' => $code,
+				'path' => $path
 			]);
 
 			$blog = "<div class='diwe-blog' data-post='".$postData."'>";

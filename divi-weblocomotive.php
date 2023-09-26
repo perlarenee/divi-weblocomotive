@@ -42,11 +42,12 @@ endif;
  * Enqueue script with jQuery as a dependency.
  */
 function wpdocs_scripts_method() {
-	$plugin_dir = WP_PLUGIN_DIR . '/divi-weblocomotive';
+	$fullUrl = get_site_url();
+	$plugin_dir = preg_replace("(^https?:)", "", $fullUrl).'/wp-content/plugins/divi-weblocomotive';
 	wp_enqueue_script( 'fontawesome', $plugin_dir . '/scripts/fontawesome.js', array( 'jquery' ) );
 
 }
-add_action( 'wp_enqueue_scripts', 'wpdocs_scripts_method' );
+//add_action( 'wp_enqueue_scripts', 'wpdocs_scripts_method' );
 
 function weichie_load_more() {
 //inspired by https://weichie.com/blog/load-more-posts-ajax-wordpress/

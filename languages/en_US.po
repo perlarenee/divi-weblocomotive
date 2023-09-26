@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Divi Weblocomotive 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/divi-"
 "weblocomotive\n"
-"POT-Creation-Date: 2023-09-10 18:44:07+00:00\n"
+"POT-Creation-Date: 2023-09-26 09:10:44+00:00\n"
 "PO-Revision-Date: 2023-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,6 +95,156 @@ msgstr ""
 #: includes/modules/MasonryGrid/MasonryGrid.php:86
 #: includes/modules/MasonryGrid/MasonryGrid.php:106
 msgid "12"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:17
+msgid "WL Blog"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:24
+#: includes/modules/MasonryGrid/MasonryGrid.php:25
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:31
+msgid "Text"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:34
+#: includes/modules/MasonryGrid/MasonryGrid.php:35
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:40
+msgid "Heading"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:37
+#: includes/modules/MasonryGrid/MasonryGrid.php:38
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:43
+msgid "Input your desired heading."
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:41
+msgid "Content"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:44
+msgid "Subcontext here"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:48
+msgid "Post Type"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:51
+msgid "Blog Post Type"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:56
+msgid "Limit Posts"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:59
+msgid "Limit initially visible blog posts"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:64
+msgid "Order Posts"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:67
+msgid "ASC"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:68
+msgid "DESC"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:70
+msgid "Order posts ascending or descending"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:75
+msgid "Order By"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:78
+msgid "none"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:79
+msgid "ID"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:80
+msgid "author"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:81
+msgid "title"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:82
+msgid "type"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:83
+msgid "date"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:84
+msgid "modified"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:85
+msgid "parent"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:86
+msgid "rand"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:87
+msgid "comment_count"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:88
+msgid "relevance"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:89
+msgid "menu_order"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:91
+msgid "Order by selected element"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:96
+msgid "Dark Theme"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:99
+msgid "Dark"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:100
+msgid "Light"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:102
+msgid "Select dark or light theme"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:107
+msgid "Reveal Code"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:110
+msgid "Show"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:111
+msgid "Hide"
+msgstr ""
+
+#: includes/modules/Blog/Blog.php:113
+msgid "Enable or disable pseudo code styling"
 msgstr ""
 
 #: includes/modules/DotNav/DotNav.php:18
@@ -225,21 +375,6 @@ msgstr ""
 
 #: includes/modules/MasonryGrid/MasonryGrid.php:18
 msgid "Masonry Grid"
-msgstr ""
-
-#: includes/modules/MasonryGrid/MasonryGrid.php:25
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:31
-msgid "Text"
-msgstr ""
-
-#: includes/modules/MasonryGrid/MasonryGrid.php:35
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:40
-msgid "Heading"
-msgstr ""
-
-#: includes/modules/MasonryGrid/MasonryGrid.php:38
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:43
-msgid "Input your desired heading."
 msgstr ""
 
 #: includes/modules/MasonryGrid/MasonryGrid.php:42

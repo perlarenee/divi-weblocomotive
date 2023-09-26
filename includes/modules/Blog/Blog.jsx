@@ -19,7 +19,7 @@ class Blog extends Component {
     let order = this.props.order === "on" ? "asc" : "desc";
     let orderby = this.props.orderby ? this.props.orderby : "date";
     let query = "post_type="+postType+"&_embed&per_page="+limit+"&order="+order+"&orderby="+orderby;
-    console.log('order',order,'orderby',orderby);
+    //console.log('order',order,'orderby',orderby);
 
     let path = "/wp-json/wp/v2/posts?"+query;
     //if local dev environment
