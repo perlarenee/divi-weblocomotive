@@ -84,12 +84,6 @@
 	opacity: 1;
 	transition: opacity .2s ease-in-out .3s;
  }
- .diwe-masonry .grid-wrapper .description h4{
-	color: #000;
- }
- .diwe-masonry .grid-wrapper .description p{
-	color: #000;
-}
 .diwe-masonry .grid-wrapper {
 	display: grid;
 	grid-gap: 10px;
