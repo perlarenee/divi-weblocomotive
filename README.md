@@ -38,5 +38,44 @@ This is a plugin with custom modules for the Elegant Themes Visual Builder, Divi
 * Infinite load of posts without affecting the website footer. Load more button disappears after last post is loaded.
 * Imitation subtitle using first cateogy name as subtitle. 
 
+### Slider
+#### Features
+* Adds a slider to the visual editor
+* Control of the following for the overall slider:
+** Header text
+** Loop
+** Autoplay
+** Lazyload
+** Arrowkeys
+** Mousedrag
+** Autoheight
+** Slider height
+** Gutter
+** Edge Padding
+** Slide by range/item quantity
+** Item count per page on desktop, tablet and mobile
+* Control of the following for individual slides
+
+** Image
+** Image Background Color
+** Image fit (width/height/cover)
+** Image veritcal position (if image fit height, top/center/bottom)
+** Image horizontal position (if image fit width, left, center, right)
+
+** Description heading
+** Description text
+** Description background color
+** Description text color
+** Description overlay style (cover, slidein left/right/top/bottom)
+** Description full width
+** Description full height
+** Description Y Position
+** Description X Position
+
+** Link
+** Link behavior
+
+
+_Note about slide: I haven't yet integrated it with a modal box. At some point I will or you're welcome to branch
 
 _Best of luck. I hope this helps._

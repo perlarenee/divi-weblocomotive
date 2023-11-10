@@ -36,20 +36,7 @@ class DIWE_SliderItem extends ET_Builder_Module {
 
 	public function get_fields() {
 		return array(
-			'heading' => array(
-				'label'           => esc_html__( 'Heading', 'diwe-divi-weblocomotive' ),
-				'type'            => 'text',
-				'option_category' => 'basic_option',
-				'description'     => esc_html__( 'Input your desired heading.', 'diwe-divi-weblocomotive' ),
-				'toggle_slug'     => 'main_content',
-			),
-			'content' => array(
-				'label'           => esc_html__( 'Description', 'diwe-divi-weblocomotive' ),
-				'type'            => 'tiny_mce',
-				'option_category' => 'basic_option',
-				'description'     => esc_html__( 'Content entered here will appear as the image description', 'diwe-divi-weblocomotive' ),
-				'toggle_slug'     => 'main_content',
-			),
+
 			'upload' => array(
 				'label'              => esc_html__( 'Image', 'diwe-divi-weblocomotive' ),
 				'type'               => 'upload',
@@ -58,42 +45,66 @@ class DIWE_SliderItem extends ET_Builder_Module {
 				'update_text'        => esc_attr__( 'Set As Image', 'diwe-divi-weblocomotive' ),
 				'toggle_slug'        => 'main_content',
 			),
-			'url' => array(
-				'label'           => esc_html__( 'Link', 'diwe-divi-weblocomotive' ),
-				'type'            => 'text',
-				'option_category' => 'basic_option',
-				'description'     => esc_html__( 'Link', 'diwe-divi-weblocomotive' ),
-				'toggle_slug'     => 'main_content',
-				'dynamic_content' => 'url',
-				'default' => ''
-			),
-			'url_window' => array(
-				'label'             => esc_html__( 'Link Behavior', 'diwe-divi-weblocomotive' ),
-				'type'              => 'yes_no_button',
-				'options'           => array(
-					'on'  => esc_html__( 'New Window', 'diwe-divi-weblocomotive' ),
-					'off' => esc_html__( 'Same window', 'diwe-divi-weblocomotive' ),
-				),
-				'toggle_slug'     => 'main_content'
-			),
 			'background' => array(
-				'label'           => esc_html__( 'Background Color', 'diwe-divi-weblocomotive' ),
+				'label'           => esc_html__( 'Image Background Color', 'diwe-divi-weblocomotive' ),
 				'type'            => 'color',
 				'toggle_slug'     => 'main_content',
 				'default' => '#000',
 			),
-			'overlay_style' => array(
+			'fit' => array(
+				'label'           => esc_html__( 'Image Fit', 'diwe-divi-weblocomotive' ),
+				'type'            => 'select',
+				'options'         => array(
+					'width' => esc_html__( 'Width', 'diwe-divi-weblocomotive' ),
+					'height'  => esc_html__( 'Height', 'diwe-divi-weblocomotive' ),
+					'cover' => esc_html__( 'Cover', 'diwe-divi-weblocomotive' ),
+				),
+				'toggle_slug'     => 'main_content',
+				'affects'         => array(
+					'position_height',
+					'position_width',
+				),
+				'default' => 'width',
+			),
+			'position_height' => array(
 				'label'           => esc_html__( 'Image Vertical Position', 'diwe-divi-weblocomotive' ),
 				'type'            => 'select',
 				'options'         => array(
-					'on' => esc_html__( 'Static Overlay', 'diwe-divi-weblocomotive' ),
-					'top' => esc_html__( 'Slide In - Top', 'diwe-divi-weblocomotive' ),
-					'bottom'  => esc_html__( 'Slide In - Bottom', 'diwe-divi-weblocomotive' ),
-					'left' => esc_html__( 'Slide In - Left', 'diwe-divi-weblocomotive' ),
-					'right'  => esc_html__( 'Slide In - Right', 'diwe-divi-weblocomotive' ),
+					'top' => esc_html__( 'Top', 'diwe-divi-weblocomotive' ),
+					'center' => esc_html__( 'Center', 'diwe-divi-weblocomotive' ),
+					'bottom'  => esc_html__( 'Bottom', 'diwe-divi-weblocomotive' ),
 				),
 				'toggle_slug'     => 'main_content',
-				'default' => 'on',
+				'depends_show_if' => 'width',
+				'default' => 'center',
+			),
+			'position_width' => array(
+				'label'           => esc_html__( 'Image Horizontal Position', 'diwe-divi-weblocomotive' ),
+				'type'            => 'select',
+				'options'         => array(
+					'left'  => esc_html__( 'Left', 'diwe-divi-weblocomotive' ),
+					'center' => esc_html__( 'Center', 'diwe-divi-weblocomotive' ),
+					'right'  => esc_html__( 'Right', 'diwe-divi-weblocomotive' )
+				),
+				'toggle_slug'     => 'main_content',
+				'depends_show_if' => 'height',
+				'default' => 'center',
+			),
+
+
+			'heading' => array(
+				'label'           => esc_html__( 'Description Heading', 'diwe-divi-weblocomotive' ),
+				'type'            => 'text',
+				'option_category' => 'basic_option',
+				'description'     => esc_html__( 'Input your desired heading.', 'diwe-divi-weblocomotive' ),
+				'toggle_slug'     => 'main_content',
+			),
+			'content' => array(
+				'label'           => esc_html__( 'Description Text', 'diwe-divi-weblocomotive' ),
+				'type'            => 'tiny_mce',
+				'option_category' => 'basic_option',
+				'description'     => esc_html__( 'Content entered here will appear as the image description', 'diwe-divi-weblocomotive' ),
+				'toggle_slug'     => 'main_content',
 			),
 			'background_desc' => array(
 				'label'           => esc_html__( 'Description Background Color', 'diwe-divi-weblocomotive' ),
@@ -106,6 +117,19 @@ class DIWE_SliderItem extends ET_Builder_Module {
 				'type'            => 'color',
 				'toggle_slug'     => 'main_content',
 				'default' => '#000000',
+			),
+			'overlay_style' => array(
+				'label'           => esc_html__( 'Description Overlay Style', 'diwe-divi-weblocomotive' ),
+				'type'            => 'select',
+				'options'         => array(
+					'on' => esc_html__( 'Static Overlay', 'diwe-divi-weblocomotive' ),
+					'top' => esc_html__( 'Slide In - Top', 'diwe-divi-weblocomotive' ),
+					'bottom'  => esc_html__( 'Slide In - Bottom', 'diwe-divi-weblocomotive' ),
+					'left' => esc_html__( 'Slide In - Left', 'diwe-divi-weblocomotive' ),
+					'right'  => esc_html__( 'Slide In - Right', 'diwe-divi-weblocomotive' ),
+				),
+				'toggle_slug'     => 'main_content',
+				'default' => 'on',
 			),
 			'width_desc' => array(
 				'label'             => esc_html__( 'Description Full Width', 'diwe-divi-weblocomotive' ),
@@ -159,47 +183,26 @@ class DIWE_SliderItem extends ET_Builder_Module {
 				'depends_show_if' => 'off',
 				'default' => 'center_w',
 			),
-			'fit' => array(
-				'label'           => esc_html__( 'Image Fit', 'diwe-divi-weblocomotive' ),
-				'type'            => 'select',
-				'options'         => array(
-					'width' => esc_html__( 'Width', 'diwe-divi-weblocomotive' ),
-					'height'  => esc_html__( 'Height', 'diwe-divi-weblocomotive' ),
-					'cover' => esc_html__( 'Cover', 'diwe-divi-weblocomotive' ),
-				),
+			
+			'url' => array(
+				'label'           => esc_html__( 'Link', 'diwe-divi-weblocomotive' ),
+				'type'            => 'text',
+				'option_category' => 'basic_option',
+				'description'     => esc_html__( 'Link', 'diwe-divi-weblocomotive' ),
 				'toggle_slug'     => 'main_content',
-				'affects'         => array(
-					'position_height',
-					'position_width',
-				),
-				'default' => 'width',
+				'dynamic_content' => 'url',
+				'default' => ''
 			),
-			'position_height' => array(
-				'label'           => esc_html__( 'Image Vertical Position', 'diwe-divi-weblocomotive' ),
-				'type'            => 'select',
-				'options'         => array(
-					'top' => esc_html__( 'Top', 'diwe-divi-weblocomotive' ),
-					'center' => esc_html__( 'Center', 'diwe-divi-weblocomotive' ),
-					'bottom'  => esc_html__( 'Bottom', 'diwe-divi-weblocomotive' ),
+			'url_window' => array(
+				'label'             => esc_html__( 'Link Behavior', 'diwe-divi-weblocomotive' ),
+				'type'              => 'yes_no_button',
+				'options'           => array(
+					'on'  => esc_html__( 'New Window', 'diwe-divi-weblocomotive' ),
+					'off' => esc_html__( 'Same window', 'diwe-divi-weblocomotive' ),
 				),
-				'toggle_slug'     => 'main_content',
-				'depends_show_if' => 'width',
-				'default' => 'center',
-			),
-			'position_width' => array(
-				'label'           => esc_html__( 'Image Horizontal Position', 'diwe-divi-weblocomotive' ),
-				'type'            => 'select',
-				'options'         => array(
-					'left'  => esc_html__( 'Left', 'diwe-divi-weblocomotive' ),
-					'center' => esc_html__( 'Center', 'diwe-divi-weblocomotive' ),
-					'right'  => esc_html__( 'Right', 'diwe-divi-weblocomotive' )
-				),
-				'toggle_slug'     => 'main_content',
-				'depends_show_if' => 'height',
-				'default' => 'center',
+				'toggle_slug'     => 'main_content'
 			),
 
-			
 		);
 		
 	}
