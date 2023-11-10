@@ -67,7 +67,6 @@ class DIWE_DotNavItem extends ET_Builder_Module {
 	
 	public function render( $attrs, $content = null, $render_slug ) {
 		$props = $this->props;
-		//var_dump($this->props); s
 		$label = '<span class="label">'.$this->props['label'].'</span>';
 		$url = $this->props['url'];
 		$url_window =$url && $url != "" ? $this->props['url_window'] : false;
@@ -76,7 +75,6 @@ class DIWE_DotNavItem extends ET_Builder_Module {
 		$position = $parent_module->shortcode_atts['position'] && $parent_module->shortcode_atts['position'] != "" ? $parent_module->shortcode_atts['position'] : "left";
 		$output = '<li>'.($url && $url!=""?'<a href="'.$url.'" target="'.($url_window == "on"?'_blank':'_self').'">':'').($position=="left"?'<span class="dot"><span class="inner"></span></span>':'').$label.($position=="right"?'<span class="dot"><span class="inner"></span></span>':'').($url?'</a>':'').'</li>';
 		return $output;
-		//&#x2022
 	}
 }
 

@@ -210,8 +210,6 @@ class DIWE_MasonryGridItem extends ET_Builder_Module {
 	   	);
 		$markup = ($hasOverlay? '<a '.$url.' target="'.($url_behavior == 'on' ? '_blank' : '_self').'">':'') . '<img src="'.et_sanitized_previously($this->props['upload'] ).'" alt="" />';
 
-
-
 		if($this->props['heading']!==""|$this->props['content']!==""){
 			$markup .= '<div class="description" style="background-color:'.$background.';color:'.$color.';"><div class="inner"><h4>'.esc_html($this->props['heading']).'</h4>'.$this->props['content'].'</div></div>' ;
 		}

@@ -193,7 +193,7 @@
 	color: #ffac74;
 }
 .blog-card.code span.code {
-	color: #4db5eb !important;
+	color: #666;
 }
 @media (min-width: 640px) {
 	.blog-card {

@@ -45,6 +45,10 @@
 .diwe-masonry .grid-wrapper a:hover img {
 	opacity: .8;
 }
+.diwe-masonry .grid-wrapper .fit-width img {
+	max-width: 100%;
+	max-height: none;
+}
 .diwe-masonry .grid-wrapper .fit-height img {
 	max-height: 100%;
 	max-width: none;

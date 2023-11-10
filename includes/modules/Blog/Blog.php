@@ -205,7 +205,7 @@ class DIWE_Blog extends ET_Builder_Module {
 			wp_reset_postdata();
 			
 			$blog .= '</div>';
-			$blog .= '<div class="loadmorePosts"><a data-instance="1" class="btn"><div class="inner">Load More</div></a></div>';
+			$blog .= '<div class="loadmorePosts wl_button float-left m-r-3"><a data-instance="1" class="btn et_pb_button et_pb_button_0 et_pb_bg_layout_light">Load More</a></div>';
 		}
 		return $blog;
 	}
@@ -214,8 +214,7 @@ class DIWE_Blog extends ET_Builder_Module {
 	public function render( $attrs, $content = null, $render_slug ) {
 		$title = $this->props['heading'];
 		$post_type = $this->props['post_type'];
-		//$loadmore = '<div class="loadmorePosts"><a data-instance="1" >Load More</a></div>';
-		$output =  sprintf('<h3 class="blog-heading">%1s</h3><h5>%2$s</h5>%3$s', 
+		$output =  sprintf('<h3 class="blog-heading">%s</h3><h5>%s</h5>%s', 
 			esc_html( $title ),
 			$this->props['content'],
 			$this->get_blog($post_type)

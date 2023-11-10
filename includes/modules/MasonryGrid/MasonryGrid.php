@@ -126,15 +126,12 @@ class DIWE_MasonryGrid extends ET_Builder_Module {
 		if($this->props['size_tablet']!="" && $structure=="on"){
 			$sizeTablet = $this->props['size_tablet'];
 		}
-		$output =  sprintf('<div class="diwe-masonry"><h3 class="masonry-grid-heading">%1s</h3><div class="grid-wrapper %2s " data-structure="%3s">%4s</div></div>', 
+		$output =  sprintf('<div class="diwe-masonry"><h3 class="masonry-grid-heading">%s</h3><div class="grid-wrapper %s " data-structure="%s">%s</div></div>', 
 		esc_html( $title ), 
 		$size.' '.$sizeTablet.' '.$sizeMobile,
 		$this->props['structure'] == "on" ? "masonry":"grid",
 		et_sanitized_previously( $this->content ),
-		
-		
 	);
-		//return $this->_render_module_wrapper( $output, $render_slug );
 		return $output;
 	}
 
