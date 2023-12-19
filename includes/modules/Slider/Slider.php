@@ -82,6 +82,17 @@ class DIWE_Slider extends ET_Builder_Module {
 				'toggle_slug'     => 'main_content',
 				'default' => 'on',
 			),
+			'dot_nav' => array(
+				'label'             => esc_html__( 'Dot Navigation', 'diwe-divi-weblocomotive' ),
+				'description'     => esc_html__( 'Enable doty navigation.', 'diwe-divi-weblocomotive' ),
+				'type'              => 'yes_no_button',
+				'options'           => array(
+					'on'  => esc_html__( 'On', 'diwe-divi-weblocomotive' ),
+					'off' => esc_html__( 'Off', 'diwe-divi-weblocomotive' ),
+				),
+				'toggle_slug'     => 'main_content',
+				'default' => 'on',
+			),
 			'mouse_drag' => array(
 				'label'             => esc_html__( 'Mouse Drag', 'diwe-divi-weblocomotive' ),
 				'description'     => esc_html__( 'Enable mouse drag feature.', 'diwe-divi-weblocomotive' ),
@@ -217,6 +228,7 @@ class DIWE_Slider extends ET_Builder_Module {
 		$autoplay = $this->props['autoplay'] == "on" ? "true" : "false";
 		$lazyload = $this->props['lazyload'] == "on" ? "true" : "false";
 		$arrowkeys = $this->props['arrow_keys'] == "on" ? "true" : "false";
+		$dotNav = $this->props['dot_nav'] == "on" ? "true" : "false";
 		$mousedrag = $this->props['mouse_drag'] == "on" ? "true" : "false";
 		$autoheight = $this->props['auto_height'] == "on" ? "true" : "false";
 		$gutter = $this->props['gutter'];
@@ -227,7 +239,7 @@ class DIWE_Slider extends ET_Builder_Module {
 		$countMobile = $this->props['count_mobile'];
 		$countAll = $count.'-'.$countTablet.'-'.$countMobile;
 		
-		$output =  sprintf('<h3 class="slider-heading">%s</h3><div class="diwe-slider dk %s %s %s" data-count="%s" data-height="%s" data-loop="%s" data-autoplay="%s" data-lazyload="%s" data-arrowkeys="%s" data-mousedrag="%s" data-autoheight="%s" data-gutter="%s" data-edgepadding="%s" data-slideby="%s">%s</div>', 
+		$output =  sprintf('<h3 class="slider-heading">%s</h3><div class="diwe-slider dk %s %s %s" data-count="%s" data-height="%s" data-loop="%s" data-autoplay="%s" data-lazyload="%s" data-arrowkeys="%s" data-dotnav="%s" data-mousedrag="%s" data-autoheight="%s" data-gutter="%s" data-edgepadding="%s" data-slideby="%s">%s</div>', 
 		esc_html( $title ), 
 		"count-dk_".$count,
 		"count-tab_".$countTablet,
@@ -238,6 +250,7 @@ class DIWE_Slider extends ET_Builder_Module {
 		$autoplay,
 		$lazyload,
 		$arrowkeys,
+		$dotNav,
 		$mousedrag,
 		$autoheight,
 		$gutter,

@@ -100,7 +100,60 @@
 .diwe-slider .description .inner {
     padding: 1rem;
 }
+/* navigation */
+.et_pb_diwe_slider .tns-outer {
+    position: relative;
+  }
+  .et_pb_diwe_slider [data-controls] {
+    border: 0;
+    padding: 0;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    z-index: 1;
+    background: transparent;
+  }
+  .et_pb_diwe_slider [data-controls="prev"] {
+    left: 20px;
+  }
+  .et_pb_diwe_slider [data-controls="next"] {
+    right: 20px;
+  }
+  .tns-nav {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    text-align: center;
+  }
+  .tns-ovh{
+    margin-bottom: 50px;
+  }
+  [data-nav]{
+    width: 15px;
+    height: 15px;
+    margin: 0 3px;
+    border-radius: 50%;
+    border: 2px solid #666;
 
+  }
+  [data-nav]:hover, [data-nav].tns-nav-active{
+    background:#666;
+  }
+  button[data-action]{
+    margin: 5px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    border: 2px solid #666;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    z-index: 1000;
+  }
+
+  button[data-action]:hover {
+    background: #fff;
+  }
 /* visual editor */
 
 .diwe-slider.mb.count-dk1 {

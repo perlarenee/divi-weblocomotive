@@ -47,6 +47,7 @@ This is a plugin with custom modules for the Elegant Themes Visual Builder, Divi
 ** Autoplay
 ** Lazyload
 ** Arrowkeys
+** Dot navigation
 ** Mousedrag
 ** Autoheight
 ** Slider height

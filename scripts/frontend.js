@@ -286,6 +286,11 @@ jQuery(function($) {
                     autoplay: ap,
                     lazyload: ll,
                     arrowKeys: ak,
+                    controlsText: ['<span class="fas fa-chevron-circle-left"></span>', '<span class="fas fa-chevron-circle-right"></span>'],
+                    autoplayText: [
+                        "<i class='fa-solid fa-play'></i>",
+                        "<i class='fa-solid fa-stop'></i>"
+                    ],
                     edgePadding: ep,
                     mouseDrag: md,
                     autoHeight: ah,
