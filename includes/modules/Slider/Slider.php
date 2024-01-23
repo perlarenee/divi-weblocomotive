@@ -223,6 +223,9 @@ class DIWE_Slider extends ET_Builder_Module {
 
 	public function render( $attrs, $content = null, $render_slug ) {
 		$title = $this->props['heading'];
+		if($title){
+			$title = '<h3 class="slider-heading">'.esc_html($title).'</h3>';
+		}
 		$height = $this->props['slide_height'];
 		$loop = $this->props['loop'] == "on" ? "true" : "false";
 		$autoplay = $this->props['autoplay'] == "on" ? "true" : "false";
@@ -239,8 +242,8 @@ class DIWE_Slider extends ET_Builder_Module {
 		$countMobile = $this->props['count_mobile'];
 		$countAll = $count.'-'.$countTablet.'-'.$countMobile;
 		
-		$output =  sprintf('<h3 class="slider-heading">%s</h3><div class="diwe-slider dk %s %s %s" data-count="%s" data-height="%s" data-loop="%s" data-autoplay="%s" data-lazyload="%s" data-arrowkeys="%s" data-dotnav="%s" data-mousedrag="%s" data-autoheight="%s" data-gutter="%s" data-edgepadding="%s" data-slideby="%s">%s</div>', 
-		esc_html( $title ), 
+		$output =  sprintf('%s<div class="diwe-slider dk %s %s %s" data-count="%s" data-height="%s" data-loop="%s" data-autoplay="%s" data-lazyload="%s" data-arrowkeys="%s" data-dotnav="%s" data-mousedrag="%s" data-autoheight="%s" data-gutter="%s" data-edgepadding="%s" data-slideby="%s">%s</div>', 
+		$title, 
 		"count-dk_".$count,
 		"count-tab_".$countTablet,
 		"count-mob_".$countMobile,

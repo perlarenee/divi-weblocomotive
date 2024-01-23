@@ -237,23 +237,8 @@ jQuery(function($) {
 
     });
 
-    
-
-   window.sliders = function(){
-    //console.log('hi slider');
+   window.slidersWL = function(){
     $('.et_pb_diwe_slider').each(function(i){
-        //let thisSlider = $(".et_pb_diwe_slider_"+i);
-
-        /*if($(".et_pb_diwe_slider_"+i +" .diwe-slider.mb").length != 0){
-            //is visual builder view
-            let items = $(".et_pb_diwe_slider_"+i +" .diwe-slider.mb .et_pb_diwe_slider_item");
-            let limit = thisSlider.attr('data-count');
-
-            items.each(function(i){
-                //if(i<)
-            });
-
-        }*/
 
         if(!$(".et_pb_diwe_slider_"+i +" .tns-outer").length){
             //console.log('slider not already working');
@@ -269,6 +254,7 @@ jQuery(function($) {
             let gt = $(selector).data('gutter');
             let ep = $(selector).data('edgepadding');
             let sb = $(selector).data('slideby');
+            let nav = $(selector).data('dotnav');
             //counts.split(".");
             let dktop = 3;
             dktop = counts[0];
@@ -277,13 +263,13 @@ jQuery(function($) {
             let mob = 1;
             mob = counts[2];
  
-          //  let sliderPromise = new Promise(function(sliderResolve) {
                 let slider = tns({
                     container: selector,
                     loop: lp,
                     items: mob,
                     slideBy: sb,
                     autoplay: ap,
+                    nav: nav,
                     lazyload: ll,
                     arrowKeys: ak,
                     controlsText: ['<span class="fas fa-chevron-circle-left"></span>', '<span class="fas fa-chevron-circle-right"></span>'],
@@ -308,36 +294,6 @@ jQuery(function($) {
                     }
                     }
                 });
-                //sliderResolve(slider.getInfo().container);
-           // });
-
-
-           /* sliderPromise.then(function(sliderContainer){
-                // .. code after the slider has been built up
-                //console.log('hi slider promise',$(selector + ' .et_pb_diwe_slider_item').first().attr('class'));
-                $(selector + ' .et_pb_diwe_slider_item.slider-item').each(function(i){
-                    
-                    let fit = $(this).attr("data-fit");
-                    let pos = $(this).attr("data-pos");
-                    let address = $(this).attr("data-address");
-
-                    if($(selector + ' .et_pb_diwe_slider_item[data-address="'+address+'"]:not([data-pos]').length != 0){
-                        let autoItems = $(selector + ' .et_pb_diwe_slider_item[data-address="'+address+'"]:not([data-pos]');
-                        autoItems.addClass("slider-item pos-"+pos + " fit-"+fit);
-                        autoItems.attr({"data-fit":fit,"data-pos":pos});
-                        
-                        //autoItems.attr("data-pos") = pos;
-                       // console.log('found you',address,autoItems);
-
-                    }
-
-                })
-                //slider-item
-
-            });*/
-
-            
-
 
         }else{
             console.log('nope',".et_pb_diwe_slider_"+i);
@@ -346,7 +302,7 @@ jQuery(function($) {
      });
    }
     
-   window.sliders();
+   window.slidersWL();
     
 
 });

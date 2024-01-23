@@ -212,8 +212,11 @@ class DIWE_SliderItem extends ET_Builder_Module {
 		$post_type = get_post_type( get_the_ID() );
 		$parent_module = self::get_parent_modules( $post_type )['et_pb_diwe_slider'];
 		$sliderHeightP = $parent_module->shortcode_atts['slide_height'];
-		if (!preg_match('/(?:px|%|em)$/', $sliderHeight)) {
+		$sliderHeightInt = $sliderHeightP;
+		if (!preg_match('/(?:px|%|em)$/', $sliderHeightP)) {
 			$sliderHeight=$sliderHeightP.'px';
+		}else{
+			$sliderHeightInt = preg_replace('/(?:px|%|em)$/', '', $sliderHeightP);
 		}
 
 		$background = $this->props['background'];
@@ -247,7 +250,7 @@ class DIWE_SliderItem extends ET_Builder_Module {
 			}elseif($overlay == "right"){
 				$overlayStyle = 'left: 100%';
 			}else{
-				$overlayStyle = 'margin-'.$overlay.': -'.$sliderHeight*2 .'px';
+				$overlayStyle = 'margin-'.$overlay.': -200%';//.($sliderHeightInt*2);
 			}
 			
 		}

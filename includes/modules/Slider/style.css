@@ -25,6 +25,10 @@
     -ms-flex-align: center;
     align-items: center;
     flex-direction: row;
+    height: 100%;
+}
+.diwe-slider .et_pb_module_inner {
+    height: 100%;
 }
 .diwe-slider .fit-height .image {
     background-size: auto 100%;
@@ -125,9 +129,6 @@
     bottom: -25px;
     width: 100%;
     text-align: center;
-  }
-  .tns-ovh{
-    margin-bottom: 50px;
   }
   [data-nav]{
     width: 15px;

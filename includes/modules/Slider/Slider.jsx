@@ -23,7 +23,16 @@ class Slider extends Component {
       if(item){
         item.classList.add('fit-'+fit,'pos-'+position);
         let itemWrap = document.querySelector('.et_pb_diwe_slider_item[data-address="'+address+'"] .image');
-        itemWrap.style.height=this.props.slide_height+"px";
+
+        //check for slider int suffix
+        if(!!this.props.slide_height){
+          if(/(%|px|em)$/g.test(this.props.slide_height)){
+            itemWrap.style.height=this.props.slide_height+"px";
+          }
+
+        }
+
+        
       }
       i++;
     }

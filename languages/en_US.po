@@ -1,12 +1,12 @@
-# Copyright (C) 2023 WebLocomotive
+# Copyright (C) 2024 WebLocomotive
 # This file is distributed under the GPL2.
 msgid ""
 msgstr ""
 "Project-Id-Version: Divi Weblocomotive 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/divi-"
 "weblocomotive\n"
-"POT-Creation-Date: 2023-11-10 16:34:56+00:00\n"
-"PO-Revision-Date: 2023-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2024-01-19 23:11:46+00:00\n"
+"PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: en\n"
@@ -113,7 +113,6 @@ msgstr ""
 #: includes/modules/MasonryGrid/MasonryGrid.php:35
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:40
 #: includes/modules/Slider/Slider.php:35
-#: includes/modules/SliderItem/SliderItem.php:40
 msgid "Heading"
 msgstr ""
 
@@ -121,7 +120,7 @@ msgstr ""
 #: includes/modules/MasonryGrid/MasonryGrid.php:38
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:43
 #: includes/modules/Slider/Slider.php:38
-#: includes/modules/SliderItem/SliderItem.php:43
+#: includes/modules/SliderItem/SliderItem.php:99
 msgid "Input your desired heading."
 msgstr ""
 
@@ -253,11 +252,11 @@ msgstr ""
 msgid "Enable or disable pseudo code styling"
 msgstr ""
 
-#: includes/modules/DotNav/DotNav.php:18
+#: includes/modules/DotNav/DotNav.php:18 includes/modules/Slider/Slider.php:86
 msgid "Dot Navigation"
 msgstr ""
 
-#: includes/modules/DotNav/DotNav.php:25 includes/modules/Slider/Slider.php:175
+#: includes/modules/DotNav/DotNav.php:25 includes/modules/Slider/Slider.php:186
 msgid "Items"
 msgstr ""
 
@@ -267,15 +266,15 @@ msgstr ""
 
 #: includes/modules/DotNav/DotNav.php:44
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:161
-#: includes/modules/SliderItem/SliderItem.php:156
-#: includes/modules/SliderItem/SliderItem.php:195
+#: includes/modules/SliderItem/SliderItem.php:87
+#: includes/modules/SliderItem/SliderItem.php:180
 msgid "Right"
 msgstr ""
 
 #: includes/modules/DotNav/DotNav.php:45
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:160
-#: includes/modules/SliderItem/SliderItem.php:154
-#: includes/modules/SliderItem/SliderItem.php:193
+#: includes/modules/SliderItem/SliderItem.php:85
+#: includes/modules/SliderItem/SliderItem.php:178
 msgid "Left"
 msgstr ""
 
@@ -303,7 +302,8 @@ msgstr ""
 #: includes/modules/Slider/Slider.php:57 includes/modules/Slider/Slider.php:68
 #: includes/modules/Slider/Slider.php:79 includes/modules/Slider/Slider.php:90
 #: includes/modules/Slider/Slider.php:101
-#: includes/modules/Slider/Slider.php:151
+#: includes/modules/Slider/Slider.php:112
+#: includes/modules/Slider/Slider.php:162
 msgid "On"
 msgstr ""
 
@@ -311,7 +311,8 @@ msgstr ""
 #: includes/modules/Slider/Slider.php:58 includes/modules/Slider/Slider.php:69
 #: includes/modules/Slider/Slider.php:80 includes/modules/Slider/Slider.php:91
 #: includes/modules/Slider/Slider.php:102
-#: includes/modules/Slider/Slider.php:152
+#: includes/modules/Slider/Slider.php:113
+#: includes/modules/Slider/Slider.php:163
 msgid "Off"
 msgstr ""
 
@@ -321,15 +322,15 @@ msgstr ""
 
 #: includes/modules/DotNav/DotNav.php:80
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:149
-#: includes/modules/SliderItem/SliderItem.php:142
-#: includes/modules/SliderItem/SliderItem.php:181
+#: includes/modules/SliderItem/SliderItem.php:73
+#: includes/modules/SliderItem/SliderItem.php:166
 msgid "Top"
 msgstr ""
 
 #: includes/modules/DotNav/DotNav.php:81
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:150
-#: includes/modules/SliderItem/SliderItem.php:144
-#: includes/modules/SliderItem/SliderItem.php:183
+#: includes/modules/SliderItem/SliderItem.php:75
+#: includes/modules/SliderItem/SliderItem.php:168
 msgid "Bottom"
 msgstr ""
 
@@ -338,53 +339,53 @@ msgstr ""
 #: includes/modules/DotNavItem/DotNavItem.php:50
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:63
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:66
-#: includes/modules/SliderItem/SliderItem.php:62
-#: includes/modules/SliderItem/SliderItem.php:65
+#: includes/modules/SliderItem/SliderItem.php:188
+#: includes/modules/SliderItem/SliderItem.php:191
 msgid "Link"
 msgstr ""
 
 #: includes/modules/DotNav/DotNav.php:98
 #: includes/modules/DotNavItem/DotNavItem.php:55
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:72
-#: includes/modules/SliderItem/SliderItem.php:71
+#: includes/modules/SliderItem/SliderItem.php:197
 msgid "Link Behavior"
 msgstr ""
 
 #: includes/modules/DotNav/DotNav.php:101
 #: includes/modules/DotNavItem/DotNavItem.php:58
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:75
-#: includes/modules/SliderItem/SliderItem.php:74
+#: includes/modules/SliderItem/SliderItem.php:200
 msgid "New Window"
 msgstr ""
 
 #: includes/modules/DotNav/DotNav.php:102
 #: includes/modules/DotNavItem/DotNavItem.php:59
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:76
-#: includes/modules/SliderItem/SliderItem.php:75
+#: includes/modules/SliderItem/SliderItem.php:201
 msgid "Same window"
 msgstr ""
 
 #: includes/modules/DotNav/DotNav.php:108
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:54
-#: includes/modules/SliderItem/SliderItem.php:54
+#: includes/modules/SliderItem/SliderItem.php:41
 msgid "Image"
 msgstr ""
 
 #: includes/modules/DotNav/DotNav.php:110
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:56
-#: includes/modules/SliderItem/SliderItem.php:56
+#: includes/modules/SliderItem/SliderItem.php:43
 msgid "Upload an image"
 msgstr ""
 
 #: includes/modules/DotNav/DotNav.php:111
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:57
-#: includes/modules/SliderItem/SliderItem.php:57
+#: includes/modules/SliderItem/SliderItem.php:44
 msgid "Choose an Image"
 msgstr ""
 
 #: includes/modules/DotNav/DotNav.php:112
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:58
-#: includes/modules/SliderItem/SliderItem.php:58
+#: includes/modules/SliderItem/SliderItem.php:45
 msgid "Set As Image"
 msgstr ""
 
@@ -437,17 +438,15 @@ msgid "Masonry Grid Item"
 msgstr ""
 
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:47
-#: includes/modules/SliderItem/SliderItem.php:47
 msgid "Description"
 msgstr ""
 
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:50
-#: includes/modules/SliderItem/SliderItem.php:50
+#: includes/modules/SliderItem/SliderItem.php:106
 msgid "Content entered here will appear as the image description"
 msgstr ""
 
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:81
-#: includes/modules/SliderItem/SliderItem.php:80
 msgid "Background Color"
 msgstr ""
 
@@ -496,12 +495,12 @@ msgid "Fit"
 msgstr ""
 
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:135
-#: includes/modules/SliderItem/SliderItem.php:166
+#: includes/modules/SliderItem/SliderItem.php:58
 msgid "Width"
 msgstr ""
 
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:136
-#: includes/modules/SliderItem/SliderItem.php:167
+#: includes/modules/SliderItem/SliderItem.php:59
 msgid "Height"
 msgstr ""
 
@@ -546,79 +545,83 @@ msgstr ""
 msgid "Enable arrow key navigation."
 msgstr ""
 
-#: includes/modules/Slider/Slider.php:86
-msgid "Mouse Drag"
-msgstr ""
-
 #: includes/modules/Slider/Slider.php:87
-msgid "Enable mouse drag feature."
+msgid "Enable doty navigation."
 msgstr ""
 
 #: includes/modules/Slider/Slider.php:97
-msgid "Auto Height"
+msgid "Mouse Drag"
 msgstr ""
 
-#: includes/modules/Slider/Slider.php:99
-msgid "Enable auto height feature."
+#: includes/modules/Slider/Slider.php:98
+msgid "Enable mouse drag feature."
 msgstr ""
 
 #: includes/modules/Slider/Slider.php:108
+msgid "Auto Height"
+msgstr ""
+
+#: includes/modules/Slider/Slider.php:110
+msgid "Enable auto height feature."
+msgstr ""
+
+#: includes/modules/Slider/Slider.php:119
 msgid "Slider Height"
 msgstr ""
 
-#: includes/modules/Slider/Slider.php:116
+#: includes/modules/Slider/Slider.php:127
 msgid "Select height of slider items."
 msgstr ""
 
-#: includes/modules/Slider/Slider.php:121
+#: includes/modules/Slider/Slider.php:132
 msgid "Gutter"
 msgstr ""
 
-#: includes/modules/Slider/Slider.php:129
+#: includes/modules/Slider/Slider.php:140
 msgid "Select width of gutters."
 msgstr ""
 
-#: includes/modules/Slider/Slider.php:134
+#: includes/modules/Slider/Slider.php:145
 msgid "Edge Padding"
 msgstr ""
 
-#: includes/modules/Slider/Slider.php:142
+#: includes/modules/Slider/Slider.php:153
 msgid "Select width of edge padding."
 msgstr ""
 
-#: includes/modules/Slider/Slider.php:147
+#: includes/modules/Slider/Slider.php:158
 msgid "Slide By Page"
 msgstr ""
 
-#: includes/modules/Slider/Slider.php:149
+#: includes/modules/Slider/Slider.php:160
 msgid "Enable items by page."
 msgstr ""
 
-#: includes/modules/Slider/Slider.php:161
+#: includes/modules/Slider/Slider.php:172
 msgid "Slide By Range"
 msgstr ""
 
-#: includes/modules/Slider/Slider.php:169
+#: includes/modules/Slider/Slider.php:180
 msgid "Select number of items to slide each time."
 msgstr ""
 
-#: includes/modules/Slider/Slider.php:176
+#: includes/modules/Slider/Slider.php:187
 msgid "Select number of items visible at one time on desktop screen size."
 msgstr ""
 
-#: includes/modules/Slider/Slider.php:187
+#: includes/modules/Slider/Slider.php:198
 msgid "Tablet Items"
 msgstr ""
 
-#: includes/modules/Slider/Slider.php:188
+#: includes/modules/Slider/Slider.php:199
 msgid "Select number of items visible at one time on tablet screen size."
 msgstr ""
 
-#: includes/modules/Slider/Slider.php:199
+#: includes/modules/Slider/Slider.php:210
 msgid "Mobile Items"
 msgstr ""
 
-#: includes/modules/Slider/Slider.php:200
+#: includes/modules/Slider/Slider.php:211
 msgid ""
 "Select number of items visible at one time on mobile device screen size."
 msgstr ""
@@ -627,82 +630,97 @@ msgstr ""
 msgid "Slider Item"
 msgstr ""
 
-#: includes/modules/SliderItem/SliderItem.php:86
-#: includes/modules/SliderItem/SliderItem.php:178
-msgid "Image Vertical Position"
+#: includes/modules/SliderItem/SliderItem.php:49
+msgid "Image Background Color"
 msgstr ""
 
-#: includes/modules/SliderItem/SliderItem.php:89
-msgid "Static Overlay"
-msgstr ""
-
-#: includes/modules/SliderItem/SliderItem.php:90
-msgid "Slide In - Top"
-msgstr ""
-
-#: includes/modules/SliderItem/SliderItem.php:91
-msgid "Slide In - Bottom"
-msgstr ""
-
-#: includes/modules/SliderItem/SliderItem.php:92
-msgid "Slide In - Left"
-msgstr ""
-
-#: includes/modules/SliderItem/SliderItem.php:93
-msgid "Slide In - Right"
-msgstr ""
-
-#: includes/modules/SliderItem/SliderItem.php:99
-msgid "Description Background Color"
-msgstr ""
-
-#: includes/modules/SliderItem/SliderItem.php:105
-msgid "Description Text Color"
-msgstr ""
-
-#: includes/modules/SliderItem/SliderItem.php:111
-msgid "Description Full Width"
-msgstr ""
-
-#: includes/modules/SliderItem/SliderItem.php:114
-#: includes/modules/SliderItem/SliderItem.php:128
-msgid "Yes"
-msgstr ""
-
-#: includes/modules/SliderItem/SliderItem.php:115
-#: includes/modules/SliderItem/SliderItem.php:129
-msgid "No"
-msgstr ""
-
-#: includes/modules/SliderItem/SliderItem.php:125
-msgid "Description Full Height"
-msgstr ""
-
-#: includes/modules/SliderItem/SliderItem.php:139
-msgid "Description Y Position"
-msgstr ""
-
-#: includes/modules/SliderItem/SliderItem.php:143
-#: includes/modules/SliderItem/SliderItem.php:155
-#: includes/modules/SliderItem/SliderItem.php:182
-#: includes/modules/SliderItem/SliderItem.php:194
-msgid "Center"
-msgstr ""
-
-#: includes/modules/SliderItem/SliderItem.php:151
-msgid "Description X Position"
-msgstr ""
-
-#: includes/modules/SliderItem/SliderItem.php:163
+#: includes/modules/SliderItem/SliderItem.php:55
 msgid "Image Fit"
 msgstr ""
 
-#: includes/modules/SliderItem/SliderItem.php:168
+#: includes/modules/SliderItem/SliderItem.php:60
 msgid "Cover"
 msgstr ""
 
-#: includes/modules/SliderItem/SliderItem.php:190
+#: includes/modules/SliderItem/SliderItem.php:70
+msgid "Image Vertical Position"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:74
+#: includes/modules/SliderItem/SliderItem.php:86
+#: includes/modules/SliderItem/SliderItem.php:167
+#: includes/modules/SliderItem/SliderItem.php:179
+msgid "Center"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:82
 msgid "Image Horizontal Position"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:96
+msgid "Description Heading"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:103
+msgid "Description Text"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:110
+msgid "Description Background Color"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:116
+msgid "Description Text Color"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:122
+msgid "Description Overlay Style"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:125
+msgid "Static Overlay"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:126
+msgid "Slide In - Top"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:127
+msgid "Slide In - Bottom"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:128
+msgid "Slide In - Left"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:129
+msgid "Slide In - Right"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:135
+msgid "Description Full Width"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:138
+#: includes/modules/SliderItem/SliderItem.php:152
+msgid "Yes"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:139
+#: includes/modules/SliderItem/SliderItem.php:153
+msgid "No"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:149
+msgid "Description Full Height"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:163
+msgid "Description Y Position"
+msgstr ""
+
+#: includes/modules/SliderItem/SliderItem.php:175
+msgid "Description X Position"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
