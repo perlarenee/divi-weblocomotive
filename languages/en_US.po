@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: Divi Weblocomotive 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/divi-"
 "weblocomotive\n"
-"POT-Creation-Date: 2024-01-19 23:11:46+00:00\n"
+"POT-Creation-Date: 2024-01-31 06:28:08+00:00\n"
 "PO-Revision-Date: 2024-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -265,14 +265,14 @@ msgid "Position"
 msgstr ""
 
 #: includes/modules/DotNav/DotNav.php:44
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:161
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:189
 #: includes/modules/SliderItem/SliderItem.php:87
 #: includes/modules/SliderItem/SliderItem.php:180
 msgid "Right"
 msgstr ""
 
 #: includes/modules/DotNav/DotNav.php:45
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:160
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:187
 #: includes/modules/SliderItem/SliderItem.php:85
 #: includes/modules/SliderItem/SliderItem.php:178
 msgid "Left"
@@ -321,14 +321,14 @@ msgid "Logo Position"
 msgstr ""
 
 #: includes/modules/DotNav/DotNav.php:80
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:149
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:175
 #: includes/modules/SliderItem/SliderItem.php:73
 #: includes/modules/SliderItem/SliderItem.php:166
 msgid "Top"
 msgstr ""
 
 #: includes/modules/DotNav/DotNav.php:81
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:150
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:177
 #: includes/modules/SliderItem/SliderItem.php:75
 #: includes/modules/SliderItem/SliderItem.php:168
 msgid "Bottom"
@@ -455,58 +455,83 @@ msgid "Text Color"
 msgstr ""
 
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:93
-msgid "Custom size"
+msgid "Title Size"
 msgstr ""
 
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:96
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:109
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:122
-msgid "Single"
-msgstr ""
-
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:97
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:110
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:123
-msgid "Wide"
-msgstr ""
-
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:98
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:111
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:124
-msgid "Tall"
-msgstr ""
-
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:99
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:112
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:125
-msgid "Wide/Tall"
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:101
+msgid "Select font size of title."
 msgstr ""
 
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:106
-msgid "Tablet size"
+msgid "Description Size"
+msgstr ""
+
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:114
+msgid "Select font size of description text."
 msgstr ""
 
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:119
-msgid "Mobile Device size"
+msgid "Size"
+msgstr ""
+
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:122
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:135
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:148
+msgid "Single"
+msgstr ""
+
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:123
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:136
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:149
+msgid "Wide"
+msgstr ""
+
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:124
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:137
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:150
+msgid "Tall"
+msgstr ""
+
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:125
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:138
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:151
+msgid "Wide/Tall"
 msgstr ""
 
 #: includes/modules/MasonryGridItem/MasonryGridItem.php:132
+msgid "Tablet size"
+msgstr ""
+
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:145
+msgid "Mobile Device size"
+msgstr ""
+
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:158
 msgid "Fit"
 msgstr ""
 
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:135
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:161
 #: includes/modules/SliderItem/SliderItem.php:58
 msgid "Width"
 msgstr ""
 
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:136
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:162
 #: includes/modules/SliderItem/SliderItem.php:59
 msgid "Height"
 msgstr ""
 
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:146
-#: includes/modules/MasonryGridItem/MasonryGridItem.php:157
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:172
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:184
 msgid "Background Position"
+msgstr ""
+
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:176
+#: includes/modules/MasonryGridItem/MasonryGridItem.php:188
+#: includes/modules/SliderItem/SliderItem.php:74
+#: includes/modules/SliderItem/SliderItem.php:86
+#: includes/modules/SliderItem/SliderItem.php:167
+#: includes/modules/SliderItem/SliderItem.php:179
+msgid "Center"
 msgstr ""
 
 #: includes/modules/Slider/Slider.php:18
@@ -644,13 +669,6 @@ msgstr ""
 
 #: includes/modules/SliderItem/SliderItem.php:70
 msgid "Image Vertical Position"
-msgstr ""
-
-#: includes/modules/SliderItem/SliderItem.php:74
-#: includes/modules/SliderItem/SliderItem.php:86
-#: includes/modules/SliderItem/SliderItem.php:167
-#: includes/modules/SliderItem/SliderItem.php:179
-msgid "Center"
 msgstr ""
 
 #: includes/modules/SliderItem/SliderItem.php:82

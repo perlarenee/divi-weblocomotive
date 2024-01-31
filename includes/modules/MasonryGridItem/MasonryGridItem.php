@@ -89,8 +89,34 @@ class DIWE_MasonryGridItem extends ET_Builder_Module {
 				'toggle_slug'     => 'main_content',
 				'default' => '#000000',
 			),
+			't_size' => array(
+				'label'           => esc_html__( 'Title Size', 'diwe-divi-weblocomotive' ),
+				'type'            => 'range',
+				'range_settings' => array(
+					'min' => '0',
+					'max' => '200',
+					'step' => '1'
+				),
+				'option_category' => 'basic_option',
+				'description'     => esc_html__( 'Select font size of title.', 'diwe-divi-weblocomotive' ),
+				'toggle_slug'     => 'main_content',
+				'default' => '18',
+			),
+			'p_size' => array(
+				'label'           => esc_html__( 'Description Size', 'diwe-divi-weblocomotive' ),
+				'type'            => 'range',
+				'range_settings' => array(
+					'min' => '0',
+					'max' => '200',
+					'step' => '1'
+				),
+				'option_category' => 'basic_option',
+				'description'     => esc_html__( 'Select font size of description text.', 'diwe-divi-weblocomotive' ),
+				'toggle_slug'     => 'main_content',
+				'default' => '16',
+			),
 			'size' => array(
-				'label'           => esc_html__( 'Custom size', 'diwe-divi-weblocomotive' ),
+				'label'           => esc_html__( 'Size', 'diwe-divi-weblocomotive' ),
 				'type'            => 'select',
 				'options'         => array(
 					'xy1' => esc_html__( 'Single', 'diwe-divi-weblocomotive' ),
@@ -147,6 +173,7 @@ class DIWE_MasonryGridItem extends ET_Builder_Module {
 				'type'            => 'select',
 				'options'         => array(
 					'top' => esc_html__( 'Top', 'diwe-divi-weblocomotive' ),
+					'height_center' => esc_html__( 'Center', 'diwe-divi-weblocomotive' ),
 					'bottom'  => esc_html__( 'Bottom', 'diwe-divi-weblocomotive' ),
 				),
 				'toggle_slug'     => 'main_content',
@@ -158,6 +185,7 @@ class DIWE_MasonryGridItem extends ET_Builder_Module {
 				'type'            => 'select',
 				'options'         => array(
 					'left'  => esc_html__( 'Left', 'diwe-divi-weblocomotive' ),
+					'width_center' => esc_html__( 'Center', 'diwe-divi-weblocomotive' ),
 					'right'  => esc_html__( 'Right', 'diwe-divi-weblocomotive' )
 				),
 				'toggle_slug'     => 'main_content',
@@ -178,6 +206,8 @@ class DIWE_MasonryGridItem extends ET_Builder_Module {
 		$color = $this->props['color'];
 		$url = $this->props['url'];
 		$url_behavior= $this->props['url_window'];
+		$t_size = $this->props['t_size'];
+		$p_size = $this->props['p_size'];
 
 		$hasOverlay = false;
 		if($url !=""|$this->props['heading']!==""|$this->props['content']!==""){
@@ -205,13 +235,13 @@ class DIWE_MasonryGridItem extends ET_Builder_Module {
 		}
 		$this->wrapper_settings = array(
 			'attrs'                   => array(
-			   'class' => 'grid-item '.$size . ' fit-'.$fit .' pos-'.$position . ' tablet-'.$sizeTablet . ' mobile-'.$sizeTablet
+			   'class' => 'grid-item '.$size . ' fit-'.$fit .' pos-'.$position . ' tablet-'.$sizeTablet . ' mobile-'.$sizeMobile
 			)
 	   	);
 		$markup = ($hasOverlay? '<a '.$url.' target="'.($url_behavior == 'on' ? '_blank' : '_self').'">':'') . '<img src="'.et_sanitized_previously($this->props['upload'] ).'" alt="" />';
 
 		if($this->props['heading']!==""|$this->props['content']!==""){
-			$markup .= '<div class="description" style="background-color:'.$background.';color:'.$color.';"><div class="inner"><h4>'.esc_html($this->props['heading']).'</h4>'.$this->props['content'].'</div></div>' ;
+			$markup .= '<div class="description" style="background-color:'.$background.';color:'.$color.';"><div class="inner"><div class="header"  style="font-size:'.$t_size.'px"><h4>'.esc_html($this->props['heading']).'</h4></div><div style="font-size:'.$p_size.'px">'.$this->props['content'].'</div></div></div>' ;
 		}
 		$markup .= $hasOverlay ? '</a>':'';
 		return $markup;

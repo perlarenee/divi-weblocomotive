@@ -105,16 +105,16 @@ html {
     right: auto;
     border-radius: 0 5px 5px 0;
 }
-.wl-dotnav a:hover .label, .wl-dotnav a.active .label{
+.wl-dotnav a:hover .label, .wl-dotnav a.active .label, .wl-dotnav.showLabel a .label{
     text-indent: 0;
     margin: 0 10px 0 0;
     left: auto;
     right: auto;
 }
-.wl-dotnav.pos-left a:hover .label, .wl-dotnav.pos-left a.active .label{
+.wl-dotnav.pos-left a:hover .label, .wl-dotnav.pos-left a.active .label, .wl-dotnav.pos-left.showLabel a .label{
     margin: 0 0 0 10px;
 }
-.wl-dotnav a:hover .label::after, .wl-dotnav a.active .label::after {
+.wl-dotnav a:hover .label::after, .wl-dotnav a.active .label::after,.wl-dotnav.showLabel a .label::after {
     width: 0;
     height: 0;
     border-style: solid;
@@ -124,22 +124,22 @@ html {
     top: 0;
     content: "";
 }
-.wl-dotnav.pos-right a:hover .label::after{
+.wl-dotnav.pos-right a:hover .label::after,.wl-dotnav.pos-right.showLabel a .label::after{
     right: -17px;
     margin-right: 6px;
     border-color: transparent transparent transparent #ccc;
 }
-.wl-dotnav.pos-right a.active .label::after{
+.wl-dotnav.pos-right a.active .label::after,.wl-dotnav.pos-right.showLabel a.active .label::after{
     right: -17px;
     margin-right: 6px;
     border-color: transparent transparent transparent #000;
 }
-.wl-dotnav.pos-left a:hover .label::after{
+.wl-dotnav.pos-left a:hover .label::after,.wl-dotnav.pos-left.showLabel a .label::after{
     left: -17px;
     margin-left: 6px;
     border-color: transparent #ccc transparent transparent;
 }
-.wl-dotnav.pos-left a.active .label::after{
+.wl-dotnav.pos-left a.active .label::after,.wl-dotnav.pos-left.showLabel a.active .label::after{
     left: -17px;
     margin-left: 6px;
     border-color: transparent #000 transparent transparent;

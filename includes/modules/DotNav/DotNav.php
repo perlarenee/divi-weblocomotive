@@ -140,7 +140,7 @@ class DIWE_DotNav extends ET_Builder_Module {
 			//$logo .= "img";
 		}
 
-		$output = '<div class="wl-dotnav dotnav pos-'.$position.' '.($scroll?'scrollShow hide':'').' '.($scroll && $top?'hideTop':'').'"><div class="dotnav-wrapper">'.($logoPos != "bottom" && $logo != "" ? $logo : "").$content.($logoPos == "bottom" && $logo != "" ? $logo : "").'</div></div>';
+		$output = '<div class="wl-dotnav '.($label?'showLabel ': '').'dotnav pos-'.$position.' '.($scroll?'scrollShow hide':'').' '.($scroll && $top?'hideTop':'').'"><div class="dotnav-wrapper">'.($logoPos != "bottom" && $logo != "" ? $logo : "").$content.($logoPos == "bottom" && $logo != "" ? $logo : "").'</div></div>';
 
 		return $output;
 	}
